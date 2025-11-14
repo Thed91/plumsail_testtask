@@ -1,0 +1,6 @@
+@plumsail_testtask.Server_HostAddress = http://localhost:5236
+
+GET {{plumsail_testtask.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
