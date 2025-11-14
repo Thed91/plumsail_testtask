@@ -185,8 +185,7 @@
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Error:', response.status);
+        throw new Error(`HTTP Error:, ${response.status}`);
       }
 
       const result = await response.json();
